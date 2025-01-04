@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the font and colors then move everything to the center of the page. */
+body {
+    background-color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    background-color: #fff;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 15px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Text inside the container */
+.container > h1 { font-size: 3em; }
+.container > p {
+    max-width: 600px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* Binary formatting */
+#binary { font-family: 'Courier New', Courier, monospace; }
+#binary::first-letter { color: red; }
+
+/* Responsive Styles */
+@media (max-width: 375px) {
+    .container > h1 { font-size: 2em; }
+    .container > h2 { font-size: 1.25em; margin-bottom: 8px; }
+}

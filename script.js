@@ -34,6 +34,9 @@ function updateCountdown() {
     }
 
     document.getElementById("binary").innerHTML = string;
+
+    const audio = new Audio("./click.mp3");
+    audio.play();
 }
 
 // Set an interval to update the page every second (1000 milliseconds)
